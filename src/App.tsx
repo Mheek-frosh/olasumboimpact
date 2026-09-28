@@ -6,12 +6,14 @@ function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const fadeUp = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const fadeUp: any = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } }
   };
 
-  const staggerContainer = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const staggerContainer: any = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
